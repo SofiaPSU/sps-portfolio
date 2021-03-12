@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/servlet")
+@WebServlet("/step_one_servlet")
 public class NewServlet extends HttpServlet {
 
   @Override
