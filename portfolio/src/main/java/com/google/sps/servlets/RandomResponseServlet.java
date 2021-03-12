@@ -13,7 +13,7 @@ import com.google.gson.Gson;
 
 @WebServlet("/random_response")
 public class RandomResponseServlet extends HttpServlet {
-    String[] phrases = {"Today is a good day!","It works!","Hi"};
+    String[] phrases = {"Today is a good day!","Don't worry be happy!","Hi"};
     
   @Override
   public void doGet(final HttpServletRequest request, final HttpServletResponse response) throws IOException {
