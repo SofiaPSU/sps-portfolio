@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="ChartScript.js"></script>  
+  <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
@@ -19,12 +21,17 @@
       <p> I am currently majoring in Computer Science and planning to minor in Cyber Security.</p>
       <p> On campus I am involved with the Assocation of Women in Computing, the Penn State Equestrian Team, the Girls Who Code College Loop, and the Women in Engineering Program.</p>
       <p> I am a Technology Lead for the Girls Who Code College Loop and a Facilitator for the study groups organized by the Women in Engineering Program.</p>
-      
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-      <img style ='position:absolute; top:25px; left: 25px; width:300px; height:250px' src= "images/profile.jpg">
-      
-    </div>
+      <p>Click here to get a phrase:</p>
+      <button onclick="showPhrase()">Phrase</button>
+      <div id="json-container"></div>
+      <form action="/form-handler" method="POST">
+  <p>Enter your email here:</p>
+  <textarea name="text-input"></textarea>
+  <br/>
+  <input type="submit" />
+</form>
+ <div class ="chart"
+ id="dessert-container"></div>
+    </div> 
   </body>
 </html>
