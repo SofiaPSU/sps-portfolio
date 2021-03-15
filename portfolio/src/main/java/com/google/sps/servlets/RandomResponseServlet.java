@@ -11,15 +11,14 @@ import javax.servlet.http.HttpServletResponse;
 import com.google.gson.Gson;
 
 
-@WebServlet("/random_response")
+@WebServlet("/random-response")
 public class RandomResponseServlet extends HttpServlet {
     String[] phrases = {"Today is a good day!","Don't worry be happy!","Hi"};
     
   @Override
   public void doGet(final HttpServletRequest request, final HttpServletResponse response) throws IOException {
-        final Gson gson = new Gson();
-        final String json = gson.toJson(phrases);
-    
+    final Gson gson = new Gson();
+    final String json = gson.toJson(phrases);
     response.setContentType("application/json;");
     response.getWriter().println(json);
     

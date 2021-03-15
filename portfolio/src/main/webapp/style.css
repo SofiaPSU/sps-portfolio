@@ -4,12 +4,11 @@
   width: 650px;
   
 }
-
 #greeting-container {
   margin-top: 20px;
 }
 
-img{
+.profile{
     border-radius: 8px;
     position:absolute;
     top:25px;
